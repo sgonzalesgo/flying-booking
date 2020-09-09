@@ -1,0 +1,106 @@
+body {
+  background-color: rgb(180,180,180);
+}
+body, body * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+small {
+  opacity: 0.6;
+  font-size: 0.75rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+input, label, button {
+  font-size: 1.125rem;
+}
+#main-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3.0rem;
+}
+#component-container {
+  padding: 2rem 1rem 2rem 2rem;
+  background-color: rgb(220,220,220, 0.6);
+}
+
+#tabs-container {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.tab {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: pointer;
+}
+.tab span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.tab:not(:first-child) {
+  margin-left: 0.2rem;
+}
+.tab.active {
+  background-color: rgb(220,220,220, 0.6);
+  color: #c00;
+}
+.tab-icon {
+  padding-right: 1rem;
+}
+.tab-icon svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #fff;
+}
+.tab.active .tab-icon svg {
+  fill: #c00;
+}
+.react-datepicker {
+  border-radius: 0;
+  border-width: 0;
+}
+.react-datepicker__day-name {
+  font-size: 0.5rem;
+  font-weight: 500;
+  color: rgba(200,200,200,1)
+}
+.react-datepicker__current-month {
+  font-size: 0.8rem;
+}
+.react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+}
+.react-datepicker__day {
+  border-radius: 0 !important;
+  border: 0.01px solid rgba(200,200,200, 0.5);
+  margin: 0;
+  font-size: 0.6rem;
+  font-weight: 100;
+}
+.react-datepicker__day--today,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__day--keyboard-selected {
+  background-color: #c00;
+  opacity: 0.5;
+  color: #fff !important;
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: rgb(180,180,180);
+}
+.react-datepicker__day--selected,
+.react-datepicker__day:hover {
+  background-color: #c00c !important;
+  opacity: 1 !important;
+  color: #fff;
+  outline: none !important;
+}
+
