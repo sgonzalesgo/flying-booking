@@ -1,6 +1,10 @@
 module.exports = {
-    "transform": {
-        "^.+\\.svg$": "jest-svg-transformer"
+    moduleNameMapper: {
+        "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js"
+    },
+    transform: {
+        "^.+\\.svg$": "jest-svg-transformer",
+        '^.+\\.jsx?$': 'babel-jest',
      },
      transformIgnorePatterns: [
          "/node_modules/"

@@ -52,11 +52,11 @@ const Counter = ({ count, setCount, min=0, max=1000 }) => {
   return (
     <div>
       {/* Minus Btn */}
-      <CounterBtn onClick={ handleDecrement }>-</CounterBtn>
+      <CounterBtn data-testid="decrement-btn" onClick={ handleDecrement }>-</CounterBtn>
       {/* Counter Input */}
-      <CounterInput value={ count } onChange={handleInputValueChanged} />
+      <CounterInput data-testid="counter-value" value={ count } onChange={handleInputValueChanged} />
       {/* Plus Btn */}
-      <CounterBtn onClick={ handleIncrement }>+</CounterBtn>
+      <CounterBtn data-testid="increment-btn" onClick={ handleIncrement }>+</CounterBtn>
     </div>
   )
 }
